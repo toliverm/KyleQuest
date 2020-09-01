@@ -311,6 +311,7 @@ const loop = function() {
     ctx.fillStyle = '#a9a9a9'
     env.forEach(obj => ctx.fillRect(obj.x, obj.y, obj.width, obj.height))
     ctx.drawImage(character.spriteSheet.image,character.spriteSheet.frameX,character.spriteSheet.frameY,character.spriteSheet.frameWidth,character.spriteSheet.frameHeight,character.x,character.y,character.width,character.height)
+    
     //Reset the position if you go over the edge
     if(character.x > WIDTH){
         character.x = -character.width;
